@@ -14,7 +14,7 @@ Where in the checkout flow do customers drop off most, and what should the produ
 1. **Session** = `user_pseudo_id` + `ga_session_id`. Counting is session-level.
 2. **Funnel** = `begin_checkout` → `add_shipping_info` → `add_payment_info` → `purchase`. It is strict: a session counts at a step only if it passed all earlier steps.
 3. **Why not start at `add_to_cart`:** 2,000 of 4,848 purchase sessions (41.3%) had no `add_to_cart` event, so the step is under-tracked.
-4. **Cleaning:** removed back-to-back duplicate funnel events (78,070 → 57,925 rows, sessions unchanged). Full log in `cleaning_log.md`.
+4. **Cleaning:** removed back-to-back duplicate funnel events (78,070 → 57,925 rows, sessions unchanged).
 
 ## Findings
 | Step | Sessions | % of previous |
@@ -78,7 +78,6 @@ sql/
   03_segments.sql
   04_hypotheses.sql
   05_recommendation_impact.sql
-cleaning_log.md
 Checkout Abandonment Dashboard
 README.md
 ```
