@@ -24,7 +24,7 @@ Where in the checkout flow do customers drop off most, and what should the produ
 | add_payment_info | 6,812 | 61.35% |
 | purchase | 4,844 | 71.11% |
 
-- **Month:** shipping → payment was 52.11% in Nov, 65.66% in Dec and 72.26% in Jan. The leak exists in all 3 months and is worst in November. Excluding the 3 tracking-suspect days changed Nov to 51.07%.
+- **Month:** shipping → payment was 52.11% in Nov, 65.66% in Dec and 72.26% in Jan. The leak exists in all 3 months and is worst in November.
 - **Device:** no effect (60.77% to 63.33%).
 - **Country:** no clear effect (59.04% to 65.57%). Extremes are small groups.
 - **Channel:** among known channels, referral 66.68% vs organic 56.79% and cpc 55.13%. cpc cells are under 200 sessions per month.
@@ -73,12 +73,12 @@ Recovery rates are my assumptions, not measured.
 ## Repo structure
 ```
 sql/
-  phase_0_2_setup_validate.sql
-  phase_3_funnel.sql
-  phase_4_segments.sql
-  phase_5_hypotheses.sql
-  phase_6_recommendation_impact.sql
+  01_setup_define_validate.sql
+  02_funnel.sql
+  03_segments.sql
+  04_hypotheses.sql
+  05_recommendation_impact.sql
 cleaning_log.md
-images/dashboard.png
+Checkout Abandonment Dashboard
 README.md
 ```
