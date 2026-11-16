@@ -1,8 +1,7 @@
-# Checkout-Abandonment-Analysis
 # Where Do Customers Drop Off in Checkout?
 **Of 11,106 sessions that began checkout, 43.6% reached purchase. The biggest drop is between `add_shipping_info` and `add_payment_info`, where 4,292 sessions were lost. The product team should investigate the details page (`yourinfo.html`) first.**
 
-![Dashboard](images/dashboard.png)
+![Dashboard](images/Checkout%20Abandonment%20Dashboard%20PNG.jpg)
 
 ## Business question
 Where in the checkout flow do customers drop off most, and what should the product team fix?
